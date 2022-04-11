@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Hello, {{ user.nutzername }}! </h1>
+{#    #Todo implement an index that presents options for finding facts#}
+    {% for fact in facts %}
+    <div><p> Left: {{ fact.left }}</p></div>
+    <div><p> Relation: {{ fact.rel }}</p></div>
+    <div><p> Right: {{ fact.right }}</p></div>
+    {% endfor %}
+{%  endblock %}
